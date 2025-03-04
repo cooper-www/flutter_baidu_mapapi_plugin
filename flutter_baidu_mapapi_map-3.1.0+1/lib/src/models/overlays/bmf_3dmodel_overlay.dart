@@ -15,8 +15,8 @@ class BMF3DModelOverlay extends BMFOverlay {
   BMF3DModelOverlay({
     required this.center,
     required this.option,
-    int zIndex: 0,
-    bool visible: true,
+    int zIndex = 0,
+    bool visible = true,
   }) : super(zIndex: zIndex, visible: visible);
 
   /// map => BMF3DModelOverlay

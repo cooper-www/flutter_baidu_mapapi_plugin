@@ -30,13 +30,13 @@ class BMFPolygon extends BMFOverlay implements BMFOverlayBoundsInterface {
   /// BMFPolygon构造方法
   BMFPolygon({
     required this.coordinates,
-    this.width: 5,
-    this.strokeColor: Colors.blue,
-    this.fillColor: Colors.red,
-    this.lineDashType: BMFLineDashType.LineDashTypeNone,
+    this.width = 5,
+    this.strokeColor = Colors.blue,
+    this.fillColor = Colors.red,
+    this.lineDashType = BMFLineDashType.LineDashTypeNone,
     this.hollowShapes,
-    int zIndex: 0,
-    bool visible: true,
+    int zIndex = 0,
+    bool visible = true,
   })  : assert(coordinates.length > 2),
         super(zIndex: zIndex, visible: visible);
 
@@ -44,12 +44,12 @@ class BMFPolygon extends BMFOverlay implements BMFOverlayBoundsInterface {
   BMFPolygon.hollowShapes({
     required this.coordinates,
     required this.hollowShapes,
-    this.width: 5,
-    this.strokeColor: Colors.blue,
-    this.fillColor: Colors.red,
-    this.lineDashType: BMFLineDashType.LineDashTypeNone,
-    int zIndex: 0,
-    bool visible: true,
+    this.width = 5,
+    this.strokeColor = Colors.blue,
+    this.fillColor = Colors.red,
+    this.lineDashType = BMFLineDashType.LineDashTypeNone,
+    int zIndex = 0,
+    bool visible = true,
   })  : assert(coordinates.length > 2),
         assert(hollowShapes!.length > 0),
         super(zIndex: zIndex, visible: visible);

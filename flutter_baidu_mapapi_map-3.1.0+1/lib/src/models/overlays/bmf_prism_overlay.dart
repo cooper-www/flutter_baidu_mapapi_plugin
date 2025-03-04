@@ -33,8 +33,8 @@ class BMFPrismOverlay extends BMFOverlay {
     this.sideFaceColor,
     this.sideFacTexture,
     this.height,
-    int zIndex: 0,
-    bool visible: true,
+    int zIndex = 0,
+    bool visible = true,
   })  : assert(coordinates != null),
         assert(coordinates!.length > 3),
         super(zIndex: zIndex, visible: visible);
@@ -45,8 +45,8 @@ class BMFPrismOverlay extends BMFOverlay {
     required this.topFaceColor,
     required this.sideFaceColor,
     this.height,
-    int zIndex: 0,
-    bool visible: true,
+    int zIndex = 0,
+    bool visible = true,
   })  : assert(coordinates != null),
         assert(coordinates!.length > 3),
         super(zIndex: zIndex, visible: visible);
@@ -57,8 +57,8 @@ class BMFPrismOverlay extends BMFOverlay {
     required this.topFaceColor,
     required this.sideFacTexture,
     this.height,
-    int zIndex: 0,
-    bool visible: true,
+    int zIndex = 0,
+    bool visible = true,
   })  : assert(coordinates != null),
         assert(coordinates!.length > 3),
         super(zIndex: zIndex, visible: visible);
@@ -69,8 +69,8 @@ class BMFPrismOverlay extends BMFOverlay {
     required this.topFaceColor,
     required this.sideFaceColor,
     this.height,
-    int zIndex: 0,
-    bool visible: true,
+    int zIndex = 0,
+    bool visible = true,
   })  : assert(buildInfo != null),
         super(zIndex: zIndex, visible: visible);
 
@@ -80,8 +80,8 @@ class BMFPrismOverlay extends BMFOverlay {
     required this.topFaceColor,
     required this.sideFacTexture,
     this.height,
-    int zIndex: 0,
-    bool visible: true,
+    int zIndex = 0,
+    bool visible = true,
   })  : assert(buildInfo != null),
         super(zIndex: zIndex, visible: visible);
 

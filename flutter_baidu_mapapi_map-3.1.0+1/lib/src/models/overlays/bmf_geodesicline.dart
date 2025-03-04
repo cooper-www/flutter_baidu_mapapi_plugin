@@ -38,8 +38,8 @@ class BMFGeodesicLine extends BMFOverlay {
     this.textureImage,
     this.lineDashType = BMFLineDashType.LineDashTypeNone,
     this.lineDirectionCross180 = BMFLineDirectionCross180Type.None,
-    int zIndex: 0,
-    bool visible: true,
+    int zIndex = 0,
+    bool visible = true,
   })  : assert(coordinates.length > 1),
         super(zIndex: zIndex, visible: visible);
 
@@ -49,8 +49,8 @@ class BMFGeodesicLine extends BMFOverlay {
     required this.strokeColor,
     this.lineDashType = BMFLineDashType.LineDashTypeNone,
     this.lineDirectionCross180 = BMFLineDirectionCross180Type.None,
-    int zIndex: 0,
-    bool visible: true,
+    int zIndex = 0,
+    bool visible = true,
   }) : super(zIndex: zIndex, visible: visible);
 
   /// 纹理大地曲线构造方法
@@ -59,8 +59,8 @@ class BMFGeodesicLine extends BMFOverlay {
     required this.textureImage,
     this.lineDashType = BMFLineDashType.LineDashTypeNone,
     this.lineDirectionCross180 = BMFLineDirectionCross180Type.None,
-    int zIndex: 0,
-    bool visible: true,
+    int zIndex = 0,
+    bool visible = true,
   }) : super(zIndex: zIndex, visible: visible);
 
   BMFGeodesicLine.fromMap(Map map) : super.fromMap(map) {

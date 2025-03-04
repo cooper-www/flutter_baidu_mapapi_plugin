@@ -46,6 +46,9 @@ android {
         disable 'InvalidPackage'
     }
 
+    sourceCompatibility = '17'
+    targetCompatibility = '17'
+
 }
 
 repositories {

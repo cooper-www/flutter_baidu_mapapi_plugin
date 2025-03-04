@@ -21,8 +21,8 @@ class BMFMultiPointOverlay extends BMFOverlay {
     required this.icon,
     this.pointSize,
     BMFPoint? anchor,
-    int zIndex: 0,
-    bool visible: true,
+    int zIndex = 0,
+    bool visible = true,
   })  : assert(items.length > 0),
         super(zIndex: zIndex, visible: visible) {
     this.anchor = anchor != null ? anchor : BMFPoint(0.5, 0.5);

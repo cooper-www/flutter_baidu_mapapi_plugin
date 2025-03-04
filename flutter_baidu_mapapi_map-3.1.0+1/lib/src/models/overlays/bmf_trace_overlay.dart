@@ -26,11 +26,11 @@ class BMFTraceOverlay extends BMFOverlay implements BMFOverlayBoundsInterface {
   BMFTraceOverlay({
     required this.coordinates,
     required this.traceOverlayAnimateOption,
-    this.width: 5,
-    this.strokeColor: Colors.blue,
-    this.fillColor: Colors.green,
-    int zIndex: 0,
-    bool visible: true,
+    this.width = 5,
+    this.strokeColor = Colors.blue,
+    this.fillColor = Colors.green,
+    int zIndex = 0,
+    bool visible = true,
   })  : assert(coordinates.length > 1),
         super(zIndex: zIndex, visible: visible);
 

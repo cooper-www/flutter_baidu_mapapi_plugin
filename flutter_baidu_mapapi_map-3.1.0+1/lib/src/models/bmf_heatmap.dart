@@ -21,7 +21,7 @@ class BMFHeatMap implements BMFModel {
   BMFHeatMap({
     required this.data,
     this.radius,
-    this.opacity: 0.6,
+    this.opacity = 0.6,
     this.gradient,
   }) : assert(data.length > 0);
 

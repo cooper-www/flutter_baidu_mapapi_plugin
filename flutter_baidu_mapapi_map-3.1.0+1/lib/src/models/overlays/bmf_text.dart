@@ -41,14 +41,14 @@ class BMFText extends BMFOverlay {
     required this.text,
     required this.position,
     this.bgColor,
-    this.fontColor: Colors.blue,
-    this.fontSize: 12,
+    this.fontColor = Colors.blue,
+    this.fontSize = 12,
     this.typeFace,
-    this.alignY: BMFVerticalAlign.ALIGN_CENTER_VERTICAL,
-    this.alignX: BMFHorizontalAlign.ALIGN_CENTER_HORIZONTAL,
-    this.rotate: 0,
-    int zIndex: 0,
-    bool visible: true,
+    this.alignY = BMFVerticalAlign.ALIGN_CENTER_VERTICAL,
+    this.alignX = BMFHorizontalAlign.ALIGN_CENTER_HORIZONTAL,
+    this.rotate = 0,
+    int zIndex = 0,
+    bool visible = true,
   }) : super(zIndex: zIndex, visible: visible);
 
   /// map => BMFText
